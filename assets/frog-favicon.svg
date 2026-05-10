@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -4 100 108" width="32" height="32">
+
+  <!-- Dark circle background -->
+  <circle cx="50" cy="52" r="58" fill="#0a1209"/>
+
+  <!-- BACK LEFT THIGH -->
+  <polygon points="20,60 30,68 2,78 0,66" fill="#3ecb7a"/>
+  <polygon points="22,60 30,68 6,76 2,68" fill="#4ed882"/>
+  <!-- BACK LEFT LOWER LEG -->
+  <polygon points="0,66 2,78 6,94 14,96 16,82" fill="#26a056"/>
+  <!-- BACK LEFT WEBBED TOES -->
+  <polygon points="6,94 2,102 8,104 10,98 8,94" fill="#3ecb7a"/>
+  <polygon points="10,98 10,104 16,104 16,98 12,94" fill="#2aaa60"/>
+  <polygon points="16,98 18,104 24,102 22,96 18,94" fill="#3ecb7a"/>
+  <polygon points="22,96 26,102 30,98 26,92 22,92" fill="#2aaa60"/>
+
+  <!-- BACK RIGHT THIGH -->
+  <polygon points="80,60 70,68 98,78 100,66" fill="#3ecb7a"/>
+  <polygon points="78,60 70,68 94,76 98,68" fill="#4ed882"/>
+  <!-- BACK RIGHT LOWER LEG -->
+  <polygon points="100,66 98,78 94,94 86,96 84,82" fill="#26a056"/>
+  <!-- BACK RIGHT WEBBED TOES -->
+  <polygon points="94,94 98,102 92,104 90,98 92,94" fill="#3ecb7a"/>
+  <polygon points="90,98 90,104 84,104 84,98 88,94" fill="#2aaa60"/>
+  <polygon points="84,98 82,104 76,102 78,96 82,94" fill="#3ecb7a"/>
+  <polygon points="78,96 74,102 70,98 74,92 78,92" fill="#2aaa60"/>
+
+  <!-- FRONT LEFT FOREARM -->
+  <polygon points="6,40 16,22 10,16 2,28 8,42" fill="#26a056"/>
+  <polygon points="2,28 8,16 14,12 12,22 4,30" fill="#3ecb7a"/>
+  <polygon points="8,16 6,6 12,2 14,12" fill="#2aaa60"/>
+
+  <!-- FRONT RIGHT FOREARM -->
+  <polygon points="94,40 84,22 90,16 98,28 92,42" fill="#26a056"/>
+  <polygon points="98,28 92,16 86,12 88,22 96,30" fill="#3ecb7a"/>
+  <polygon points="92,16 94,6 88,2 86,12" fill="#2aaa60"/>
+
+  <!-- BODY -->
+  <polygon points="40,10 60,10 76,22 84,40 84,62 74,74 50,80 26,74 16,62 16,40 24,22" fill="#3ecb7a"/>
+  <polygon points="40,10 60,10 74,22 78,38 22,38 26,22" fill="#52d882"/>
+  <polygon points="22,38 78,38 80,60 70,72 50,78 30,72 20,60" fill="#3ecb7a"/>
+  <polygon points="16,42 22,38 20,60 16,58" fill="#1e8848"/>
+  <polygon points="84,42 78,38 80,60 84,58" fill="#166e3c"/>
+  <polygon points="40,72 50,80 60,72 50,68" fill="#0e4020"/>
+  <polygon points="47,8 53,8 52,78 48,78" fill="#5adb8e"/>
+
+</svg>
