@@ -6,6 +6,8 @@
 
 **→ [Live demo](https://probatus.streamlit.app)** *(deployed via Streamlit Community Cloud)*
 
+![Strategy comparison — five philosophies, same data](screenshots/strategy-comparison.png)
+
 ---
 
 ## Why this exists
@@ -80,6 +82,8 @@ Goes long only when at least 2 of the 3 base sub-strategies (SMA, Bollinger, Don
 
 ### Walk-forward (4 folds, 3-year train / 1-year test, SMA crossover)
 
+![Walk-forward — IS vs OOS Sharpe by fold](screenshots/walk-forward.png)
+
 | Metric                   | Value  |
 |--------------------------|--------|
 | Avg in-sample Sharpe     | +1.21  |
@@ -113,6 +117,26 @@ Six-stage event-driven loop, executed once per bar:
 
 ---
 
+## Screenshots
+
+### Single backtest — equity curve and drawdown
+
+![Single backtest](screenshots/single-backtest.png)
+
+### Trade visualization — AAPL with SMA crossover signals
+
+Interactive candlestick chart with strategy indicators overlaid, BUY/SELL markers at every fill, and entry-exit lines colored green (winning trade) or red (losing trade).
+
+![Trade visualization](screenshots/trade-visualization.png)
+
+### Parameter sweep — Sharpe heatmap
+
+Run every parameter combination on the grid. If a contiguous green region appears, the strategy is robust. If only one cell is green, it's overfit.
+
+![Parameter sweep](screenshots/parameter-sweep.png)
+
+---
+
 ## Features
 
 - **5 interactive Streamlit tabs:** single backtest · trade visualization · parameter sweep · walk-forward · strategy comparison
@@ -129,7 +153,7 @@ Six-stage event-driven loop, executed once per bar:
 Python 3.12 · pandas · NumPy · yfinance · Streamlit · Plotly. ~2,000 LOC across 9 modules in the `backtester/` package.
 
 ```
-probatus/
+Probatus/
 ├── backtester/
 │   ├── __init__.py        # Public API
 │   ├── events.py          # MarketEvent, SignalEvent, OrderEvent, FillEvent
@@ -142,6 +166,7 @@ probatus/
 │   ├── engine.py          # BacktestEngine event loop
 │   └── robustness.py      # parameter_sweep + walk_forward
 ├── assets/                # Frog logo + favicon
+├── screenshots/           # README images
 ├── .streamlit/            # Theme config
 ├── app.py                 # Streamlit frontend
 └── requirements.txt
@@ -175,3 +200,9 @@ Browser opens at `http://localhost:8501`. Default backtest runs SMA crossover on
 **Marin Xhemollari** · [marinxhemollari.com](https://marinxhemollari.com) · [LinkedIn](https://linkedin.com/in/marin-xhemollari)
 
 Incoming University of Michigan LSA Data Science (Fall 2026 transfer) · Goal: quantitative trading + Master's in Financial Engineering.
+
+---
+
+## License
+
+MIT — use, modify, fork freely. Attribution appreciated.
